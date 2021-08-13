@@ -80,8 +80,9 @@ footer a {
   .display-5 {
     font-size: 1.6rem !important;
   }
-  .message {
+  .message { 
     top: 16%;
+    width: 10rem;
   }
   .category-card {
     width: 18rem;
