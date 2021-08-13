@@ -22,8 +22,8 @@ body {
 }
 
 button.navbar-toggler.navbar-toggler-right {
-    border-color: white !important;
-  }
+  border-color: white !important;
+}
 
 .search-button:hover {
   background-color: dimgrey;
@@ -31,19 +31,28 @@ button.navbar-toggler.navbar-toggler-right {
   border: 2px solid dimgrey !important;
 }
 
-.card {
+.category-card {
   height: 7rem;
   background-color: #f2f1ef;
   width: 18rem;
 }
 
-.card .btn {
+.category-card .btn {
   border: 2px solid #e4dee0;
 }
 
-.card .btn:hover {
+.category-card .btn:hover {
   background-color: rgba(0, 0, 0, 0.55);
   color: white;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+footer a {
+  text-decoration: none;
 }
 
 @media (min-width: 1024px) {
@@ -53,31 +62,36 @@ button.navbar-toggler.navbar-toggler-right {
   }
 }
 
-@media(max-width: 768px){
-    .card{
-       width: 14rem;
-       height: 8rem;
-    }
-    .message{
-        top: 20%;
-    }
+@media (max-width: 768px) {
+  .category-card {
+    width: 14rem;
+    height: 8rem;
+  }
+  .message {
+    top: 20%;
+  }
 }
-
 
 @media (max-width: 440px) {
   .display-5 {
     font-size: 1.6rem !important;
   }
   .message {
-    top: 14%;
+    top: 16%;
   }
-  .card{
-      width: 16rem;
+  .category-card {
+    width: 18rem;
+  }
+  .top-image img {
+    height: 20rem;
   }
 }
 
 @media (max-width: 330px) {
   .display-5 {
     font-size: 1.4rem !important;
+  }
+  .category-card {
+    width: 16rem;
   }
 }
