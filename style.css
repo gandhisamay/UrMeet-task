@@ -60,15 +60,6 @@ footer a {
   text-decoration: none;
 }
 
-.visible{
-    display: none;
-}
-.display{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 @media (min-width: 1024px) {
   .top-image img {
     height: 670px;
