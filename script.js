@@ -1,4 +1,5 @@
 const cats = document.querySelectorAll('.cat');
+
 const categoryList = document.querySelector('.category-list');
 
 for(let cat of cats){
