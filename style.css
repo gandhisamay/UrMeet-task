@@ -1,37 +1,61 @@
-.top-image{
-    position: fixed;
+body {
+  font-family: "Open Sans";
+}
+
+.navbar{
+    z-index: 1;
+}
+
+.top-image {
+  width: 100%;
+}
+
+.message {
+  max-width: 25rem;
+  top: 30%;
+  left: 2%;
+}
+
+.search-button:hover {
+  background-color: dimgrey;
+  color: rgba(0, 0, 0, 0.55) !important;
+  border: 2px solid dimgrey !important;
+}
+
+.card {
+  height: 7rem;
+  background-color: #f2f1ef;
+}
+
+.card .btn {
+  border: 2px solid #e4dee0;
+}
+
+.card .btn:hover {
+  background-color: rgba(0, 0, 0, 0.55);
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .top-image img {
+    height: 670px;
     width: 100%;
+  }
 }
 
-.message{
+@media (max-width: 400px) {
+  .display-5 {
+    font-size: 1.8rem !important;
+  }
+  .message {
     max-width: 25rem;
-    position: absolute;
-    top: 30%;
+    top: 18%;
     left: 2%;
+  }
 }
 
-.search-button:hover{
-    background-color: rgba(0,0,0,.55);
-    color: white;
-}
-
-
-
-@media(min-width: 1024px){
-    .top-image img{
-        height: 670px;
-        width: 100%;
-    }
-}
-
-@media(max-width: 400px){
-    .display-5{
-        font-size: 1.8rem !important;
-    }
-}
-
-@media(max-width:330px){
-    .display-5{
-        font-size: 1.4rem !important;
-    }
+@media (max-width: 330px) {
+  .display-5 {
+    font-size: 1.4rem !important;
+  }
 }
