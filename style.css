@@ -1,0 +1,37 @@
+.top-image{
+    position: fixed;
+    width: 100%;
+}
+
+.message{
+    max-width: 25rem;
+    position: absolute;
+    top: 30%;
+    left: 2%;
+}
+
+.search-button:hover{
+    background-color: rgba(0,0,0,.55);
+    color: white;
+}
+
+
+
+@media(min-width: 1024px){
+    .top-image img{
+        height: 670px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 400px){
+    .display-5{
+        font-size: 1.8rem !important;
+    }
+}
+
+@media(max-width:330px){
+    .display-5{
+        font-size: 1.4rem !important;
+    }
+}
