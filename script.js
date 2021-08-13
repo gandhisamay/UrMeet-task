@@ -1,7 +1,14 @@
+let loadingSpinner = document.querySelector('.spinner-border');
+let body = document.querySelector('.body');
+
+document.body.classList.toggle('display');
+body.classList.toggle('visible');
+
 let useRequestResults = (results)=>{
     for(let i = 0; i <= 3; i++){
       document.querySelector(`#card${i+1} img`).src = results[i+5].image_480x270;
       document.querySelector(`#card${i+1} .card-text`).innerText = results[i+5].headline;
+      document.querySelector(`#card${i+1} h4`).innerText = `Price : ${results[i+5].price}`;
     }
 }
 
@@ -14,6 +21,9 @@ let requestData = async ()=>{
         }
     })
     useRequestResults(response.data.results);
+    document.body.classList.toggle('display');
+    body.classList.toggle('visible');
+    loadingSpinner.classList.toggle('visible');
     console.log(response.data.results);
 }
 

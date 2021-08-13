@@ -1,5 +1,6 @@
 body {
   font-family: "Open Sans";
+  min-height: 100vh;
 }
 
 .navbar {
@@ -51,8 +52,21 @@ button.navbar-toggler.navbar-toggler-right {
   background: transparent; /* Optional: just make scrollbar invisible */
 }
 
+.become-an-instructor .btn:hover{
+    background-color: black !important;
+}
+
 footer a {
   text-decoration: none;
+}
+
+.visible{
+    display: none;
+}
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (min-width: 1024px) {
