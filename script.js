@@ -1,4 +1,9 @@
-console.log('Hey');
+let useRequestResults = (results)=>{
+    for(let i = 0; i <= 3; i++){
+      document.querySelector(`#card${i+1} img`).src = results[i+5].image_480x270;
+      document.querySelector(`#card${i+1} .card-text`).innerText = results[i+5].headline;
+    }
+}
 
 let requestData = async ()=>{
     let response = await axios.get("https://www.udemy.com/api-2.0/courses/", {
@@ -8,7 +13,8 @@ let requestData = async ()=>{
             "Content-Type": "application/json;charset=utf-8",
         }
     })
-    console.log(response);
+    useRequestResults(response.data.results);
+    console.log(response.data.results);
 }
 
-// requestData();
+requestData();
