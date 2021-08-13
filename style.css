@@ -78,10 +78,10 @@ footer a {
 
 @media (max-width: 440px) {
   .display-5 {
-    font-size: 1.6rem !important;
+    font-size: 1.4rem !important;
   }
   .message { 
-    top: 16%;
+    top: 12%;
     width: 10rem;
   }
   .category-card {
@@ -94,7 +94,7 @@ footer a {
 
 @media (max-width: 330px) {
   .display-5 {
-    font-size: 1.4rem !important;
+    font-size: 1.2rem !important;
   }
   .category-card {
     width: 16rem;
